@@ -26,4 +26,7 @@ function moveImagesRight(){
 	}
 };
 
+buttonLeft.onclick = moveImages();
+buttonRight.onclick = moveImagesRight();
+
 changeContWidth();
