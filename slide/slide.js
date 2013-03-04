@@ -31,6 +31,7 @@ function moveImagesRight(){
 	}
 };
 
-window.onload = buttonEvents();
-
-changeContWidth();
+window.onload = function(){
+	buttonEvents();
+	changeContWidth();
+}
