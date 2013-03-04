@@ -5,8 +5,8 @@ var elemWidth = 640;
 function buttonEvents(){
 	var buttonLeft = document.getElementById("left");
 	var buttonRight = document.getElementById("right");
-	buttonLeft.onclick = moveImages();
-	buttonRight.onclick = moveImagesRight();
+	buttonLeft.onclick = moveImages;
+	buttonRight.onclick = moveImagesRight;
 }
 
 function changeContWidth(){
