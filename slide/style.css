@@ -1,0 +1,43 @@
+body{
+	font-family: Arial, sans-serif;
+}
+
+#controls{
+	clear: both;	
+}
+
+#contslide{
+	height: 360px;
+	margin-bottom: 1em;
+	overflow: hidden;
+	position: relative;
+	width: 640px;
+}
+
+#left,
+#right{
+	display: block;
+	float: left;
+	margin: 10em 1em 0;
+}
+
+#slide article{
+	position: relative;
+	float: left;
+}
+
+#slide article h2{
+	background: rgba(0,0,0,0.3);
+	bottom: 0;
+	margin: 0;
+	padding: 0.5em 1em;	
+	position: absolute;
+	width: 100%;
+}
+
+#slide .container{
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 640px;
+}
