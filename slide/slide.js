@@ -4,6 +4,11 @@ var cont = document.getElementById("contslide");
 var totalImages = cont.getElementsByTagName("img").length;
 var elemWidth = 640;
 
+function buttonEvents(){
+	buttonLeft.onclick = moveImages();
+	buttonRight.onclick = moveImagesRight();
+}
+
 function changeContWidth(){
 	cont.style.width = (elemWidth*totalImages)+"px" ;
 	console.log();
@@ -26,7 +31,6 @@ function moveImagesRight(){
 	}
 };
 
-buttonLeft.onclick = moveImages();
-buttonRight.onclick = moveImagesRight();
+document.onload = buttonEvents();
 
 changeContWidth();
