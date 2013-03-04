@@ -16,18 +16,18 @@ function changeContWidth(){
 
 function moveImages(){
 	var contLeft = cont.offsetLeft;
-	if (contLeft == ((-cont.offsetWidth) + elemWidth)){}
+	if (contLeft == 0){}
 	else{
-		cont.style.left = (contLeft - elemWidth)+"px";
+		cont.style.left = (contLeft + elemWidth)+"px";
 	}
 };
 
 function moveImagesRight(){
 	var contLeft = cont.offsetLeft;
-	if(contLeft == 0){
+	if(contLeft == ((-cont.offsetWidth) + elemWidth)){
 	}
 	else{
-		cont.style.left = (contLeft + elemWidth)+"px";
+		cont.style.left = (contLeft - elemWidth)+"px";
 	}
 };
 
