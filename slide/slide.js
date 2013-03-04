@@ -1,10 +1,10 @@
-var buttonLeft = document.getElementById("left");
-var buttonRight = document.getElementById("right");
 var cont = document.getElementById("contslide");
 var totalImages = cont.getElementsByTagName("img").length;
 var elemWidth = 640;
 
 function buttonEvents(){
+	var buttonLeft = document.getElementById("left");
+	var buttonRight = document.getElementById("right");
 	buttonLeft.onclick = moveImages();
 	buttonRight.onclick = moveImagesRight();
 }
