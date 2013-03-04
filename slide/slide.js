@@ -1,21 +1,19 @@
 var buttonLeft = document.getElementById("left");
-
 var buttonRight = document.getElementById("right");
-
 var cont = document.getElementById("contslide");
-
 var totalImages = cont.getElementsByTagName("img").length;
+var elemWidth = 640;
 
 function changeContWidth(){
-	cont.style.width = (640*totalImages)+"px" ;
+	cont.style.width = (elemWidth*totalImages)+"px" ;
 	console.log();
 }
 
 function moveImages(){
 	var contLeft = cont.offsetLeft;
-	if (contLeft == ((-cont.offsetWidth) + 640)){}
+	if (contLeft == ((-cont.offsetWidth) + elemWidth)){}
 	else{
-		cont.style.left = (contLeft - 640)+"px";
+		cont.style.left = (contLeft - elemWidth)+"px";
 	}
 };
 
@@ -24,7 +22,7 @@ function moveImagesRight(){
 	if(contLeft == 0){
 	}
 	else{
-		cont.style.left = (contLeft + 640)+"px";
+		cont.style.left = (contLeft + elemWidth)+"px";
 	}
 };
 
